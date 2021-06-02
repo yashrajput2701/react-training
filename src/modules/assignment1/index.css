@@ -1,0 +1,216 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+.wrapper{
+    background-color: rgb(197, 197, 197);
+    border-radius: 5px;
+    padding: 100px;
+    
+}
+.maincontainer{
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+}
+.bluecontainer1{
+    border-radius: 15px;
+    background-color: rgb(62, 62, 146);
+    padding: 100px;
+    margin: 100px;
+}
+.heading1{
+    color: white;
+    font-size: 60px;
+    font-weight: 100;
+    margin: 0;
+
+}
+.heading2{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 0;
+}
+.paragraph1{
+    color: white;
+    width: 475px;
+    font-size: 30px;
+    padding-bottom: 45px;
+    padding-top: 45px;
+
+}
+.bluecontainer2{ 
+    border-radius: 15px;
+    background-color: aliceblue;
+    padding: 60px;
+    margin: 50px;
+    width: 35%;
+}
+.heading3{
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+}
+.lite{
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+}
+.heading4{
+    font-size: 60px;
+    font-weight: 100;
+    margin: 0;
+    margin-left: 240px;
+}
+.list{
+    font-size: 25px;
+}
+.plan{
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.align{
+    display: block;
+}
+.starthead{ color: black;
+    font-size: 60px;
+    font-weight: 100;
+    margin: 0;}
+
+.starthead2{
+    color: black;
+    font-size: 60px;
+    font-weight: 100;
+    margin: 0;
+}
+.alignment{
+    display: flex;
+}
+.bold{
+    color: black;
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 10px;
+}
+.mainhead{
+    display: flex;
+}
+.features{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 148px;
+    margin-bottom: -36px;
+}
+.buttonbutton1{
+    color: white;
+    font-size: 20px;
+    background-color:#2f23ac;
+    height: 65px;
+    width: 322px;
+    cursor: pointer;
+    margin-left: 80px;
+    margin-top: 65px;
+}
+ul li:before {
+    content: '✓';
+  }
+  ul {
+    list-style: none;
+    padding: 7px;
+  }
+  li{
+      padding: 4px;
+  }
+.bluecontainer3{
+    border-radius: 15px;
+    background-color: #2f23ac;
+    padding: 70px;
+    margin: 50px;
+    width: 32%;
+}
+.lite2{
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    color: white;
+}
+.list2{
+    font-size: 25px;
+    color: white;
+}
+.plan2{
+    font-weight: bold;
+    font-size: 25px;
+    color:white;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.features2{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+.buttonbutton2{
+    color: rgb(4, 0, 255);
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    height: 65px;
+    width: 322px;
+    cursor: pointer;
+    margin-left: 60px;
+}
+.twoboxes{
+    display: flex;
+}
+.image{
+    margin-left: 150px;
+    margin-top: 85px;
+}
+.fontalign{
+    padding: 50px;
+    margin-top: 50px;
+}
+.corporate{
+    display: flex;
+}
+.acorporate{
+    font-size: 27px;
+    font-weight: bold;
+    margin-top: 133px;
+    margin-left: 600px;
+
+}
+.contact{
+    color: rgb(4, 0, 255);
+    font-size: 27px;
+    font-weight: bold;
+    margin-left: 600px;
+}
