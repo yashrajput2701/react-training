@@ -1,16 +1,13 @@
-import React from 'react';
-import Home from'./modules/assignment1/index.js';
-
+import React from "react";
+import Assignment2 from "./modules/assignment 2"
 class App extends React.Component {
-  render (){
-    return(
+  render() {
+    return (
       <div>
-        <Home />
-        
+        <Assignment2 />
       </div>
-      );
-    }
+    );
   }
-
+}
 
 export default App;
