@@ -1,45 +1,26 @@
-import React, {Component,} from 'react';
+import React, {useState,} from 'react';
 import './style.css';
+import Card from "./Card";
+import movieData from "./Data";
 
-function Card(props) {
-    return(
-        <div className={'Card1'}>
-         <img src={props.image}
-          alt={"poster"}
-          className={'poster'}>
-         </img>
-         <p className={'title'}>{props.title}</p>
-         <p>Release date:{props.date}</p>
-         <p>Rating: {props.Rating}</p>
+export default function Moviescreen() {
+    const [rating1,setRating1] = useState(movieData[1].rating);
+    const [rating2,setRating2] = useState(movieData[2].rating);
 
-        </div>
-        )
-        }
-class Movie extends Component{
-        render() {
+    setTimeout(() => {
+        setRating1(Math.round((rating1 + 0.3) * 10) / 10);
+        setRating2(Math.round((rating2 + 0.3) * 10) / 10);
+
+        movieData[1].rating = rating1;
+        movieData[2].rating = rating2;
+    }, 5000);
             return(
                 <div className={'cards'}>
-                    <div className={'cardcontent'}>
-                    <Card title = "DARK" 
-                    image = "./assets/global.png"
-                    date = "27/05/2020"
-                    Rating="8"/>
-                    </div>
-                    <div className={'cardcontent'}>
-                    <Card title = "LUCIFER" 
-                    image = "./assets/lucifer.jpeg"
-                    date = "27/01/2016"
-                    Rating="8"/>
-                    </div>
-                    <div className={'cardcontent'}>
-                    <Card title = "VIKINGS" 
-                    image = "./assets/maxresdefault.jpg"
-                    date = "27/05/2020"
-                    Rating="8"/>
-                    </div>
+                    {movieData.map((current,index) =>(
+                        <Card key={index} object={current} />
+                    ))}
                 </div>
-        )                                                                                                                                                                                                                                                                                      
+        );                                                                                                                                                                                                                                                                                      
     }
-}
 
-export default Movie;
+
