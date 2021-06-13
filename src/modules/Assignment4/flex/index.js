@@ -3,15 +3,15 @@ import "./index.css";
 
 import Card from "../Components/Card";
 import Header from "../Components/Header";
-import Gridcontainer from "../Components/Gridcontainer";
+import Sidebar from "../Components/Gridcontainer";
 
-function ForMobile() {
+function FlexResponsive() {
   return (
     <div className={"mainContainer"}>
       <Header />
-      <Gridcontainer />
+      <Sidebar />
 
-      <div className={"main"}>
+      <div className={"contentContainer"}>
         <div className={"sectionA"}>
           <h3>{"Support"}</h3>
           <div className={"sectionARight"}>
@@ -37,55 +37,55 @@ function ForMobile() {
             heading={"Buy currency"}
             link1={"What currencies do we accept?"}
             link2={"What currencies do we accept?"}
-            link3={"How do I reset my password?"}
+            link3={"What currencies do we accept?"}
           />
           <Card
             heading={"Verification"}
             link1={"What currencies do we accept?"}
             link2={"What currencies do we accept?"}
-            link3={"How do I reset my password?"}
+            link3={"What currencies do we accept?"}
           />
           <Card
             heading={"Orders"}
             link1={"What currencies do we accept?"}
             link2={"What currencies do we accept?"}
-            link3={"How do I reset my password?"}
+            link3={"What currencies do we accept?"}
           />
           <Card
             heading={"Wallet"}
             link1={"What currencies do we accept?"}
             link2={"What currencies do we accept?"}
-            link3={"How do I reset my password?"}
+            link3={"What currencies do we accept?"}
           />
           <Card
             heading={"Payment methods"}
             link1={"What currencies do we accept?"}
             link2={"What currencies do we accept?"}
-            link3={"How do I reset my password?"}
+            link3={"What currencies do we accept?"}
           />
           <Card
             heading={"Others"}
             link1={"What currencies do we accept?"}
             link2={"What currencies do we accept?"}
-            link3={"How do I reset my password?"}
+            link3={"What currencies do we accept?"}
           />
           <Card
             heading={"Security"}
             link1={"What currencies do we accept?"}
             link2={"What currencies do we accept?"}
-            link3={"How do I reset my password?"}
+            link3={"What currencies do we accept?"}
           />
           <Card
             heading={"Referral programme"}
             link1={"What currencies do we accept?"}
             link2={"What currencies do we accept?"}
-            link3={"How do I reset my password?"}
+            link3={"What currencies do we accept?"}
           />
           <Card
             heading={"My Xcoin Account"}
             link1={"What currencies do we accept?"}
             link2={"What currencies do we accept?"}
-            link3={"How do I reset my password?"}
+            link3={"What currencies do we accept?"}
           />
         </div>
       </div>
@@ -93,4 +93,4 @@ function ForMobile() {
   );
 }
 
-export default ForMobile;
+export default FlexResponsive;
