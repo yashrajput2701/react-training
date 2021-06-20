@@ -1,5 +1,5 @@
 import React from 'react'
-import { makeStyles, withStyles } from "@material-ui/core";
+import {  withStyles } from "@material-ui/core";
 import DriveEtaSharpIcon from '@material-ui/icons/DriveEtaSharp';
  import DeleteForeverSharpIcon from '@material-ui/icons/DeleteForeverSharp';
  import DevicesSharpIcon from '@material-ui/icons/DevicesSharp';
@@ -12,11 +12,11 @@ const style = {
     sideMenu: {
         display: 'flex',
         flexDirection: 'column',
-        position: 'absolute',
         left: '0px',
         width: '80px',
         height: '100%',
-        backgroundColor: '#1565c0'
+        backgroundColor: '#1565c0',
+        position: 'fixed',
     }
 }
 
