@@ -1,49 +1,49 @@
 import React, { useState } from "react";
+import Table from "./Table";
+import ModalComponent from "./Modal";
 import "./Style.css";
-import Modal from "react-modal";
-function Assignment8() {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
+export default function Assignment8() {
+  const [data, setData] = useState([]);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [ArrayIndex, setArrayIndex] = useState(0);
+  const [formType, setFormType] = useState("");
   return (
-    <div className={"mainwrapper"}>
-      <h2 className={"heading"}>STUDENT DETAILS</h2>
-      <button onClick={() => setModalIsOpen(true)}>Student Details</button>
-      <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
-        <h2 className={"heading"}>STUDENT DETAILS</h2>
-        <form className={"mainform"}>
-          <h3>First name</h3>
-          <div className={"form"}>
-            <input type="text" name="fname" placeholder={"Firstname"} />
-            <span className={"errormessage"}></span>
-          </div>
-          <h3>Last name</h3>
-          <div className={"form"}>
-            <input type="text" name="lname" placeholder={"Lastname"} />
-            <span className={"errormessage"}></span>
-          </div>
-          <h3>Email</h3>
-          <div className={"form"}>
-            <input type="text" name="Email" placeholder={"Enter your Email"} />
-            <span className={"errormessage"}></span>
-          </div>
-          <h3>Roll no</h3>
-          <div className={"form"}>
-            <input
-              type="number"
-              name="roll no"
-              placeholder={"Enter roll no "}
-            />
-            <span className={"errormessage"}></span>
-          </div>
-          <h3>Year</h3>
-          <div className={"form"}>
-            <input type="number" name="Year" placeholder={"Enter your year"} />
-            <span className={"errormessage"}></span>
-          </div>
-        </form>
-        <button onClick={() => setModalIsOpen(false)}>Close</button>
-      </Modal>
+    <div className={"mainContainer"}>
+      <div className={"headerSection"}>
+        <h1>{"PERSON DETAILS"}</h1>
+        <button
+          className={"btn"}
+          type="submit"
+          onClick={() => {
+            setModalOpen(true);
+            setFormType("ADD");
+          }}
+        >
+          {"Add Student"}
+        </button>
+      </div>
+      <ModalComponent
+        ModalOpen={modalOpen}
+        modalOpen={setModalOpen}
+        formType={formType}
+        setFormType={() => {
+          setFormType("");
+        }}
+        setModal={setModalOpen}
+        data={data}
+        setData={setData}
+        ArrayIndex={ArrayIndex}
+        setArrayIndex={setArrayIndex}
+      />
+
+      <Table
+        data={data}
+        ArrayIndex={ArrayIndex}
+        setFormType={setFormType}
+        setArrayIndex={setArrayIndex}
+        setData={setData}
+        setModal={setModalOpen}
+      />
     </div>
   );
 }
-
-export default Assignment8;

@@ -1,81 +1,192 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-.mainwrapper{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .mainContainer {
+    width: 100%;
+    margin: auto;
+  }
+  
+  .headerSection {
+    width: 100%;
+    margin: 2rem auto;
+    padding: 0.5rem 8rem;
     display: flex;
     justify-content: center;
-    text-align: center;
-    background-color: rgb(201, 201, 201);
-    width: 100%;
-    height: 100%;
-}
-button{
-    width: 300px;
-    height: 50px;
-    background-color: indigo;
-    color: ivory;
-    cursor: pointer;
-    font-size: 20px;
-}
-button:hover{
-    background-color: rgb(25, 65, 100);
-}
-.mainform{
-    text-align: center;
-    width: 300px;;
-    height: 500px;
-}
-.errormessage{
-    color: red;
-}
-input{
-    margin: 20px;
-    width: 200px;
-    height: 30px;
     align-items: center;
-}
-.heading{
-    font-size: 40px;
+  }
+  
+  .btn {
+    width: 15rem;
+    padding: 0.8rem 0;
+    background-color: #888888;
+    font-size: 18px;
     font-weight: bold;
+    letter-spacing: 2px;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #ff8e8e;
+  }
+  
+  .modalContainer {
+    width: 50%;
+    margin: 5rem auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 2rem 0;
+    background-color: #fff;
+  }
+  
+  .modalContainer h2 {
     text-align: center;
-}
+    font-size: 30px;
+  }
+  
+  .primaryColor {
+    color: #9b9b9b;
+    font-weight: bold;
+  }
+  
+  .form {
+    width: 70%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
+  }
+  
+  .form .formInput {
+    width: 75%;
+    height: 70px;
+    margin: 0.5rem auto;
+  }
+  
+  .form input {
+    width: 100%;
+    margin: 0 auto;
+    height: 50px;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+  }
+  
+
+  input::placeholder {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  .btnSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  
+  .btnSection .btn {
+    width: 10rem;
+    margin: 0 4.5rem;
+  }
+  
+  .yes {
+    width: 5rem;
+    padding: 0.5rem 0;
+    background-color: rgb(180, 178, 178);
+  }
+  
+  .yes:hover {
+    background-color: #ff8e8e;
+  }
+  
+  .Cancel {
+    background-color: rgb(221, 219, 219);
+  }
+  
+  .Cancel:hover {
+    background-color: rgb(180, 178, 178);
+  }
+  
+  .deleteModal {
+    width: 30%;
+    margin: auto;
+    margin-top: 1rem;
+    text-align: center;
+    padding: 3rem 0;
+    background-color: rgb(100, 118, 134);
+  }
+  
+  .deleteModal p {
+    font-size: 20px;
+    margin-bottom: 2rem;
+  }
+  
+  .tableContainer {
+    width: 70%;
+    margin: 5rem auto;
+    border-collapse: collapse;
+  }
+  
+  .tableContainer th,
+  .tableContainer td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 20rem;
+    text-align: center;
+  }
+  
+  .tableContainer th {
+    background-color: #7a7a7a;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .tableContainer th:last-child,
+  .tableContainer td:last-child {
+    width: 15rem;
+  }
+  
+  .tablebtnSection {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .tableBtn {
+    width: 35%;
+    background-color: #fff;
+    padding: 0.5rem 0.2rem;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #000;
+  }
+  
+  .tableBtn:hover {
+    background-color: #ff8e8e;
+    color: white;
+    border: none;
+  }
+  
+  .Input {
+    width: 1200px;
+    padding: 20px;
+    margin-bottom: 3rem;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+  
+  .searchInput::placeholder {
+    text-align: center;
+    font-size: 17px;
+  }
