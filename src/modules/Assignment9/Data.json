@@ -1,0 +1,21 @@
+ {"products" : [
+    {
+    "id":"1",
+    "name":"t-shirt",
+    "size":"xl",
+    "brand":"zara",
+    "colour":"red"},
+    {
+    "id":"2",
+    "name":"Jeans",
+    "size":"m",
+    "brand":"zara",
+    "colour":"yellow"},
+    {
+        "id":"3",
+        "name":"Shirt",
+        "size":"m",
+        "brand":"zara",
+        "colour":"yellow"}
+    ]
+ }
