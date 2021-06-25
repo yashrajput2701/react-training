@@ -9,16 +9,6 @@ import {
 //   import Shoppingpage from "./Shoppingpage";
   import Navbar from "./Navbar";
   import Card from "./Card";
-//   const styles = {
-//       componentWrapper: {
-//           display: "flex",
-//           justifyContent: "space-around",
-//       },
-//       componentlist: {
-//         display: "flex",
-//         justifyContent: "space-around"
-//     }
-//   }
   export default function Assignment9() {
     return (
       <Router>
@@ -42,14 +32,3 @@ import {
     );
   }
   
-//   function Home() {
-//     return <h2>Home</h2>;
-//   }
-  
-//   function About() {
-//     return <h2>About</h2>;
-//   }
-  
-//   function Users() {
-//     return <h2>Users</h2>;
-//   }
