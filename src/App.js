@@ -6,7 +6,9 @@ import React from "react";
 // import Assignment13 from "./modules/Assignment13";
 // import Assignment14 from "./modules/Assignment14";
 // import { store } from "./modules/Assignment14/store";
-import Assignment15 from "./modules/Assignment15"
+// import Assignment15 from "./modules/Assignment15";
+import Assignment16 from "./modules/Assignment16";
+// import Assignment17 from "./modules/Assignment17";
 class App extends React.Component {
   render() {
     return (
@@ -14,7 +16,9 @@ class App extends React.Component {
       {/* <Provider store={store}>
       <Assignment14 />
       </Provider>  */}
-      <Assignment15 />
+      {/* <Assignment15 /> */}
+      <Assignment16 />
+      {/* <Assignment17 /> */}
       {/* <Assignment13 /> */}
         {/* <Provider store={store}>
           <Mainscreen />
