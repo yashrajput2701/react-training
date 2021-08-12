@@ -6,7 +6,7 @@ import Form from "./Form";
 
 const styles = makeStyles((theme) => ({
   addbar: {
-    background: `url("https://app.screpy.com/img/dashboard/header-bg.svg") no-repeat center `,
+    background: `#4d79ff`,
     color: "white",
     height: "150px",
     zIndex: "1",
@@ -16,12 +16,12 @@ const styles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    width: "70%",
+    width: "80%",
     margin: "0 auto",
     [theme.breakpoints.down("sm")]: {
       flexDirection: "column",
       alignItems: "flex-start",
-      padding: "20px",
+      padding: "10px",
     },
   },
   innerContainer: {

@@ -67,6 +67,7 @@ export const LoginModalComponent = (props) => {
           },
         }
       );
+      console.log("this is my data" ,res.data);
       setData(res.data);
     } catch (err) {
       console.log(err.message);

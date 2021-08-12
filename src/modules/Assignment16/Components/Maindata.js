@@ -13,6 +13,7 @@ export default function App() {
     GridList: {
       width: "90%",
       height: "100%",
+      
     
     },
     root: {
@@ -20,7 +21,9 @@ export default function App() {
       flexWrap: "wrap",
       justifyContent: "space-around",
       overflow: "hidden",
-      marginLeft: "300px",
+      marginLeft: "340px",
+      border: "1px solid black",
+  boxShadow:"5px 10px 8px 10px #888888"
     },
     title:{
         width: "300px",

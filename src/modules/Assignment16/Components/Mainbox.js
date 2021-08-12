@@ -6,8 +6,8 @@ import { Left } from "./Left";
 const styles = makeStyles({
   MainBoxContainer: {
     position: "absolute",
-    top: "200px",
-    left: "5%",
+    top: "100px",
+    left: "7%",
     zIndex: "2",
     width: "90%",
     display: "flex",

@@ -1,0 +1,67 @@
+import React ,{ useState, useEffect } from "react";
+import axios from "axios";
+const gitHubUrl = "https://dog.ceo/api/breeds/list/all";
+function Mainpage() {
+    const [userData, setUserData] = useState([]);
+    // useEffect(() => {
+    //     getGitHubUserWithFetch();
+    //   }, []);
+    
+    //   const getGitHubUserWithFetch = async () => {
+    //     const response = await axios.get(gitHubUrl);
+    //     const jsonData = await response.data;
+    //     setUserData(jsonData);
+    //     console.log(jsonData);
+        
+    //   };
+    
+    fetch('https://dog.ceo/api/breed/hound/images    ', {
+      method: 'GET',
+      
+  })
+  .then(response => { return response.json();})
+  .then(responseData => {console.log(responseData); return responseData;})
+  .then(data => {setUserData(data.message);})
+
+  .catch(err => {
+      console.log("fetch error" + err);
+  });
+
+
+  return (
+    <>
+    
+  <div>
+    <li>{userData}</li></div>
+    </>
+  );
+}
+export default Mainpage;
+
+
+// import React from "react";
+// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// import ProductListing from "./modules/Assignment20/containers/ProductListing";
+// import Header from "./modules/Assignment20/containers/Header";
+// import "./App.css";
+// import ProductDetails from "./modules/Assignment20/containers/ProductDetails";
+// import { Provider } from "react-redux";
+// import store from "./modules/Assignment20/redux/store";
+// function App() {
+//   return (
+//     <Provider store={store}>
+//     <div className="App">
+//       <Router>
+//         <Header />
+//         <Switch>
+//           <Route path="/" exact component={ProductListing} />
+//           <Route path="/product/:productId" component={ProductDetails} />
+//           <Route>404 Not Found!</Route>
+//         </Switch>
+//       </Router>
+//     </div>
+//     </Provider>
+//   );
+// }
+
+// export default App;

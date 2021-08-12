@@ -9,7 +9,7 @@ import SubjectIcon from "@material-ui/icons/Subject";
 
 const styles = makeStyles({
   iconBox: {
-    marginTop: "40px",
+    marginTop: "20px",
     color: "white",
     display: "flex",
     alignItems: "center",
